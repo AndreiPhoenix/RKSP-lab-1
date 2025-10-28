@@ -21,7 +21,7 @@
     </properties>
     
     <dependencies>
-        <!-- Существующие зависимости -->
+        <!-- Основные зависимости Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -30,29 +30,34 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        
+        <!-- Liquibase -->
         <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
         </dependency>
+        
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
         
-        <!-- ДОБАВЬТЕ ЭТУ ЗАВИСИМОСТЬ POSTGRESQL -->
+        <!-- PostgreSQL -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
         
-        <!-- Swagger dependency (из 5 этапа) -->
+        <!-- ДОБАВЬТЕ SWAGGER ЗДЕСЬ -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.0.3</version>
         </dependency>
         
+        <!-- Тестовые зависимости (должны быть в конце) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

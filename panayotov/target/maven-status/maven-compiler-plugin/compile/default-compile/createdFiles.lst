@@ -1,0 +1,4 @@
+ru\rksp\panayotov\entity\Student.class
+ru\rksp\panayotov\PanayotovApplication.class
+ru\rksp\panayotov\repository\StudentRepository.class
+ru\rksp\panayotov\controller\StudentController.class

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="panayotov" id="script1" dbms="postgresql">
+        <sqlFile path="scripts/script1.sql"
+                 relativeToChangelogFile="true"
+                 encoding="UTF-8"
+                 endDelimiter=";"
+                 splitStatements="true"
+                 stripComments="true"/>
+        <comment>Создание схемы и таблицы student</comment>
+    </changeSet>
+
+    <changeSet author="panayotov" id="script2" dbms="postgresql" runAlways="true">
+        <sqlFile path="scripts/script2.sql"
+                 relativeToChangelogFile="true"
+                 encoding="UTF-8"
+                 endDelimiter=";"
+                 splitStatements="true"
+                 stripComments="true"/>
+        <comment>Добавление записи с ФИО студента</comment>
+    </changeSet>
+
+</databaseChangeLog>
